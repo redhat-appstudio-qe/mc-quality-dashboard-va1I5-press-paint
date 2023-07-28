@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-nba6
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/multi-comp-e2e-kasa-tenant/mc-quality-dashboard/backend-quality-dashboard-nba6@sha256:f5dd619c3e4ffd0e7077bab1218d68266ef93bdb023d9b63e34c7ca5de8634fc
+        name: container-image
+        resources: {}
+status: {}
